@@ -1,4 +1,13 @@
 from __future__ import annotations
+from ui.theme import page_container_open, page_container_close, brand_header
+
+page_container_open()
+
+brand_header(
+    title="Health Decoder",
+    subtitle="Decode health text into structured, readable insights for demo and discussion.",
+    badges=["Hackathon Demo", "Privacy-first", "Explainable Output"],
+)
 
 import streamlit as st
 
@@ -81,3 +90,4 @@ So the app surfaces quality indicators first and may **block** analysis when con
 )
 
 st.markdown("</div>", unsafe_allow_html=True)
+page_container_close()

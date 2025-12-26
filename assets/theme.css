@@ -1,0 +1,101 @@
+/* ==========================
+   Health Decoder — Theme v1
+   Minimal + stable Streamlit styling
+   ========================== */
+
+/* ---- UI Constants ---- */
+:root{
+  --hd-maxw: 1100px;
+
+  --hd-r-1: 10px;   /* radius small */
+  --hd-r-2: 14px;   /* radius default */
+
+  --hd-space-1: 8px;
+  --hd-space-2: 12px;
+  --hd-space-3: 16px;
+  --hd-space-4: 24px;
+
+  --hd-border: rgba(255,255,255,0.10);
+  --hd-card: rgba(255,255,255,0.045);
+  --hd-card-strong: rgba(255,255,255,0.065);
+
+  --hd-text-muted: rgba(255,255,255,0.72);
+}
+
+/* ---- Page width + readable layout ----
+   We style our own wrapper instead of Streamlit internals.
+*/
+.hd-page{
+  max-width: var(--hd-maxw);
+  margin: 0 auto;
+  padding: var(--hd-space-3) var(--hd-space-2);
+}
+
+/* ---- Typography hierarchy (use once per page) ---- */
+.hd-h1{
+  font-size: 1.55rem;
+  font-weight: 750;
+  line-height: 1.15;
+  margin: 0 0 var(--hd-space-1) 0;
+}
+.hd-lead{
+  color: var(--hd-text-muted);
+  margin: 0 0 var(--hd-space-2) 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+.hd-section-title{
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: var(--hd-space-3) 0 var(--hd-space-2) 0;
+}
+
+/* ---- Brand header block ---- */
+.hd-hero{
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-r-2);
+  padding: var(--hd-space-4) var(--hd-space-4);
+  margin-bottom: var(--hd-space-3);
+}
+.hd-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: var(--hd-space-2);
+}
+.hd-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--hd-border);
+  background: rgba(255,255,255,0.03);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ---- Card style (reusable) ---- */
+.hd-card{
+  background: var(--hd-card);
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-r-2);
+  padding: var(--hd-space-3);
+  margin: 0 0 var(--hd-space-3) 0;
+}
+.hd-card--strong{
+  background: var(--hd-card-strong);
+}
+.hd-card-title{
+  font-weight: 700;
+  margin-bottom: var(--hd-space-1);
+}
+.hd-muted{
+  color: var(--hd-text-muted);
+}
+
+/* ---- Spacing utilities (optional) ---- */
+.hd-mb-1{ margin-bottom: var(--hd-space-1); }
+.hd-mb-2{ margin-bottom: var(--hd-space-2); }
+.hd-mb-3{ margin-bottom: var(--hd-space-3); }

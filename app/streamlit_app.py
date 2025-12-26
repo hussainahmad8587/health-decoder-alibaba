@@ -4,7 +4,9 @@ import base64
 from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
+from ui.theme import inject_theme_css
 
+inject_theme_css()
 
 ROOT = Path(__file__).resolve().parents[1]
 
