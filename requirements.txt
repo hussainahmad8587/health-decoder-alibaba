@@ -1,0 +1,8 @@
+streamlit>=1.36
+opencv-python-headless>=4.9
+numpy>=1.26
+pandas>=2.2
+Pillow>=10.0
+requests>=2.32
+python-dotenv>=1.0
+alibabacloud-oss-v2>=1.0.0
